@@ -1,0 +1,294 @@
+$textColor: #111;
+// $navColor: #6c5b7b;
+$bgColor: #fff;
+$btnHover: #444;
+$navColor: #666;
+$footColor: #666;
+// $bgColor: #6c5b7b;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bgColor;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+hr {
+  color: #fff;
+}
+
+// NAVBAR
+.nav-container {
+  background-color: $navColor;
+  display: flex;
+  align-items: center;
+  color: $textColor;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+  height: 60px;
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+
+  .nav-logo {
+    margin-left: 1rem;
+    img {
+      height: 50px;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-right: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $bgColor;
+      }
+      a:hover {
+        color: #000;
+        transition: ease-in-out 0.15s;
+      }
+    }
+  }
+}
+
+// MAIN-CONTAINER
+.main-container {
+  color: $textColor;
+  width: 100%;
+
+  section {
+    width: 100%;
+    // height: 100vh; NOT WORKING ??
+  }
+
+  // css smooth scroll
+  // overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  .main-header {
+    text-align: center;
+    color: $textColor;
+    margin-top: 7rem;
+    text-decoration: underline;
+  }
+  .about-container {
+    padding: 0;
+    margin-top: 2rem;
+    background-color: $bgColor;
+    border: 0;
+
+    .about-title {
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      text-align: center;
+    }
+    .skill-list {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+
+      #skill-item1 {
+        padding: 0;
+        color: rgb(255, 105, 59);
+      }
+      #skill-item2 {
+        padding: 0;
+        color: rgb(76, 172, 252);
+      }
+      #skill-item3 {
+        padding: 0;
+        color: rgb(219, 116, 185);
+      }
+      #skill-item4 {
+        padding: 0;
+        color: rgb(0, 0, 0);
+      }
+      #skill-item5 {
+        padding: 0;
+        color: rgb(95, 231, 255);
+      }
+      #skill-item6 {
+        padding: 0;
+        color: rgb(255, 234, 44);
+      }
+    }
+  }
+
+  // PROJECTS CONTAINER
+  .projects-container {
+    min-height: 100vh;
+    padding: 0;
+    margin-top: 1rem;
+    background-color: $bgColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0;
+  }
+  .projects-title {
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .img-fluid:hover {
+    box-shadow: gray 3px 3px 3px;
+    transition: ease-in-out 0.15s;
+  }
+
+  .img-fluid {
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .col {
+    max-width: 500px;
+    margin: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background-color: $navColor;
+    color: $textColor;
+    a:hover {
+      color: $btnHover;
+      transition: ease-in-out 0.15s;
+    }
+    a {
+      color: $bgColor;
+      text-decoration: none;
+    }
+  }
+
+  // CONTACT CONTAINER
+  .contact-container {
+    min-height: 50vh;
+    padding: 0;
+    margin-bottom: 6rem;
+    background-color: $bgColor;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+
+    .btn {
+      color: $bgColor;
+    }
+
+    @media only screen and (max-width: 600px) {
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    .contact-title {
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .form-control {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .btn:hover {
+      color: $btnHover;
+    }
+    .btn {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact-links {
+      margin-bottom: 1rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          i {
+            padding-bottom: 1rem;
+          }
+          a {
+            color: $textColor;
+          }
+          .fa-github:hover {
+            color: $btnHover;
+            transition: ease-in-out 0.15s;
+          }
+          .fa-linkedin:hover {
+            color: #355c7d;
+            transition: ease-in-out 0.15s;
+          }
+          .fa-phone-alt:hover {
+            color: rgba(4, 175, 33, 0.5);
+            transition: ease-in-out 0.15s;
+          }
+          .fa-envelope:hover {
+            color: rgba(185, 30, 19, 0.726);
+            transition: ease-in-out 0.15s;
+          }
+        }
+      }
+    }
+  }
+}
+
+// FOOTER
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: $footColor;
+  color: $bgColor;
+  height: 60px;
+
+  .footer-logo {
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0 15px 0 15px;
+      a {
+        color: $textColor;
+      }
+      .fa-github:hover {
+        color: $btnHover;
+      }
+      .fa-linkedin:hover {
+        color: rgb(52, 106, 187);
+      }
+    }
+  }
+}

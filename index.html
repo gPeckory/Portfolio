@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Greg Power's Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <hr id="home" />
+    <nav class="nav-container navbar">
+      <span class="nav-logo"
+        ><img class="img-fluid" src="./img/666GpLogo.png" alt=""
+      /></span>
+
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- INTRO -->
+
+    <div class="main-container">
+      <h3 class="main-header">Greg Power - Web Developer</h3>
+
+      <div class="about-container container card">
+        <p>
+          Hi i'm Greg, a self taught web developer, passionate about learning
+          new technologies and creating apps that will acutally solve real world
+          problems
+        </p>
+        <div class="proficient-in">
+          <h5 class="about-title">Proficient In</h5>
+        </div>
+
+        <div class="row skill-list">
+          <div class="col">
+            <li id="skill-item1"><i class="fab fa-html5 fa-3x"></i></li>
+          </div>
+          <div class="col">
+            <li id="skill-item2"><i class="fab fa-css3-alt fa-3x"></i></li>
+          </div>
+          <div class="col">
+            <li id="skill-item3"><i class="fab fa-sass fa-3x"></i></li>
+          </div>
+          <div class="col">
+            <li id="skill-item4"><i class="fab fa-bootstrap fa-3x"></i></li>
+            <hr id="projects" />
+            <br />
+          </div>
+          <div class="col">
+            <li id="skill-item5"><i class="fab fa-react fa-3x"></i></li>
+          </div>
+          <div class="col">
+            <li id="skill-item6"><i class="fab fa-js fa-3x"></i></li>
+          </div>
+        </div>
+
+        <br />
+      </div>
+
+      <!-- PROJECTS -->
+
+      <h5 class="projects-title">My Projects</h5>
+      <div class="projects-container container">
+        <div class="project-container">
+          <div class="col">
+            <h5 class="project-title">Carpentry Website</h5>
+            <a href="https://d-g-carpentry.netlify.app/" target="_blank">
+              <img class="img-fluid" src="./img/2021-05-25 (2).png" alt="" />
+            </a>
+            <p class="project-description">
+              A functional project designed for my carpentry business using
+              HTML, SASS, Materialize and Javascript - in use right now.
+            </p>
+            <button class="btn">
+              <a
+                href="https://github.com/gPeckory/D-G-Carpentry"
+                target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="col">
+            <h5 class="project-title">React Meal Planner</h5>
+            <a href="http://meal-plan.vercel.app/" target="_blank">
+              <img class="img-fluid" src="./img/2021-05-25 (6).png" alt="" />
+            </a>
+            <p class="project-description">
+              A react project to create a meal plan for the week, cross off
+              items during a shop and find recipes using an external API.
+            </p>
+            <!-- <button class="btn">
+                <a
+                  href="https://github.com/gPeckory/D-G-Carpentry"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </button> -->
+          </div>
+        </div>
+
+        <hr id="contact" />
+        <br /><br /><br />
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="contact-container container card">
+        <h5 class="contact-title">Contact</h5>
+
+        <form
+          action="POST"
+          data-netlify="true"
+          name="contact"
+          id="contact-form"
+        >
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Enter name" />
+          </div>
+          <div class="form-group">
+            <label>Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email address"
+            />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              class="form-control"
+              placeholder="Compose message"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <h5 class="contact-title">Social</h5>
+        <p>
+          Feel free to contact me directly, or find out more using the below
+          links
+        </p>
+        <div class="contact-links row skill-list">
+          <ul>
+            <div class="col-sm">
+              <li>
+                <i class="fas fa-phone-alt fa-2x"></i>
+
+                07745130242
+              </li>
+            </div>
+            <div class="col-sm">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/gregpower93/"
+                  target="_blank"
+                  id="contact-section"
+                  class=""
+                  ><i class="fab fa-linkedin fa-2x"></i>
+                </a>
+
+                LinkedIn
+              </li>
+            </div>
+            <div class="col-sm">
+              <li>
+                <a
+                  href="https://github.com/gPeckory"
+                  target="_blank"
+                  id="contact-section"
+                  class=""
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+
+                GitHub
+              </li>
+            </div>
+            <div class="col-sm">
+              <li>
+                <i class="far fa-envelope fa-2x"></i>
+
+                gregpower93@gmail.com
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-container">
+      <footer class="footer">
+        <ul>
+          <!-- <li>
+            <a
+              href="https://www.linkedin.com/in/gregpower93/"
+              target="_blank"
+              id="contact-section"
+              class=""
+              ><span class="label"><i class="fab fa-linkedin"></i> </span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/gPeckory"
+              target="_blank"
+              id="contact-section"
+              class=""
+              ><span class="label"><i class="fab fa-github"></i></span
+            ></a>
+          </li> -->
+          <li>
+            <img class="img-fluid footer-logo" src="img/666GpLogo.png" alt="" />
+            © 2021
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
